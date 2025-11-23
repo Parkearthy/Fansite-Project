@@ -1,0 +1,168 @@
+/* ---------------- GENERAL ---------------- */
+body {
+  margin: 0;
+  background: #111;
+  color: #eee;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+h1, h2, h3 {
+  color: #b8c2ff;
+}
+
+a {
+  color: #b8c2ff;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  background: #1b1b1b;
+}
+
+.main-nav a:hover {
+  color: #fff;
+}
+
+/* ---------------- HERO HEADERS ---------------- */
+.hero, .sub-hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #1a1a28;
+  border-bottom: 2px solid #333;
+}
+
+/* ---------------- HOME GRID ---------------- */
+.grid-home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+.home-card {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+/* Media Query – Home Page */
+@media (max-width: 900px) {
+  .grid-home {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-home {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- GALLERY GRID ---------------- */
+.grid-gallery {
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item {
+  background: #1b1b1b;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Media Query – Gallery */
+@media (max-width: 900px) {
+  .grid-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- ANALYSIS LAYOUT ---------------- */
+.grid-analysis {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 25px;
+  padding: 20px;
+}
+
+.analysis-sidebar {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.analysis-content {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background: #b8c2ff;
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Media Query – Analysis Page */
+@media (max-width: 800px) {
+  .grid-analysis {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #1b1b1b;
+  margin-top: 40px;
+  color: #888;
+}
